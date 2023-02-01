@@ -1,6 +1,8 @@
+@import "./variables.scss";
+
 .bg-dark-1 {
     opacity: 1;
-    background: #1E1B1B
+    background: $color-primary
 }
 
 .bg-dark-2 {
@@ -19,4 +21,8 @@ footer {
 #footer-nav div ul li {
     margin-right: 1rem !important;
     margin-left: 1rem !important;
+}
+
+nav div ul li a {
+    color: white !important
 }
