@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 // Variable overrides first
-$primary: #900;
+
 $enable-shadows: true;
 $prefix: "mo-";
 
@@ -10,4 +10,7 @@ $prefix: "mo-";
 
 .w-10 {
     width: 10%;
+}
+.place-center {
+    place-content: center;
 }

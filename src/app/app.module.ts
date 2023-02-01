@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogInternalComponent } from './blog-internal/blog-internal.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BlogComponent,
-    BlogInternalComponent
+    BlogInternalComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
