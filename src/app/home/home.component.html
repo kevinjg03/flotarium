@@ -1,50 +1,104 @@
-<div class="container-fluid">
+<div class="container-fluid p-0">
     <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="w-100 h-100 d-grid place-center py-5">
-                <p class="my-4 title fw-bold">
+        <div class="col-12 col-md-6 p-6">
+            <div class="w-100 h-100  py-5">
+                <p class="fs-2 fw-bold my-4 text-wrap title w-75">
                     FLOW INTO YOUR INNER SELF
                 </p>
                 <button class="btn btn-primary rounded-5 text-white my-4 w-25">RESERVAR</button>
                 <div class="d-flex my-4">
-                    <img src="http://placehold.it/"/>
+                    <img class="clock-icon m-2 mt-3" src="assets/icon/reloj.png" />
                     <div class="">
-                        <p class="intro-schedule">
+                        <p class="intro-schedule mb-1 text-light-emphasis">
                             ¡Estamos abiertos!
                         </p>
-                        <p class="schedules">
+                        <p class="schedules mb-0">
                             Lunes, miercoles, jueves y viernes de 10:30 am a 9:30pm.
                         </p>
                         <p class="schedules">
-                            Sabados y domingos de 9 am a 8 pm. 
+                            Sabados y domingos de 9 am a 8 pm.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-12 col-md-6">
-            <img class="w-100  h-100 object-fit-cover" src="assets/img/image-banner-1.png"/>
+            <img class="w-100  h-100 object-fit-cover" src="assets/img/float_nation.png" />
         </div>
     </div>
-    <div class="row"></div>
+    <div class="row bg-float2 text-white p-6">
+        <div class="col-12 py-3">
+            <p class="fw-bold fs-3 ">
+                {{'Beneficios de la flotación o privación sensorial' | uppercase}}
+            </p>
+        </div>
+        <div *ngFor="let beneficio of beneficios" class="col-12 col-md-4">
+            <p class="benefit-title underline-title fs-5">{{beneficio.name}}</p>
+            <ul id="benefit-list" class="fs-6 fw-lighter">
+                <li *ngFor="let item of beneficio.benefits">
+                    {{item}}
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 pe-5">
+            <a class="btn btn-outline-light rounded-5 my-4 w-25 m-auto fs-4 float-end">FLOTA POR PRIMERA VEZ</a>
+        </div>
+    </div>
     <div class="row bg-black ">
-        <div class="col-12 py-4">
-            <div class="w-50 d-grid place-center py-5  my-5 text-white text-center m-auto">
+        <div class="col-12 py-4 water-bg position-relative">
+            <div class="bg-primary-gradient w-100 position-absolute z-1"></div>
+            <div class="w-50 d-grid place-center py-5  my-5 text-white text-center m-auto z-0">
                 <p class="my-4 fs-3">FLOAT INTO YOUR INNER SELF</p>
-                <p class="my-4 fs-6"> La flotación o privación sensorial es una práctica donde en ausencia de nuestros sentidos nuestra atención
-                    se vuelve hacia adentro. Esto nos permite alcanzar altos niveles de meditación y la recuperación física de nuestro cuerpo.
+                <p class="my-4 fs-6"> La flotación o privación sensorial es una práctica donde en ausencia de nuestros
+                    sentidos nuestra atención
+                    se vuelve hacia adentro. Esto nos permite alcanzar altos niveles de meditación y la recuperación
+                    física de nuestro cuerpo.
                 </p>
                 <button class="btn btn-outline-light rounded-5 my-4 w-25 m-auto fs-5">CONOCÉ MÁS </button>
             </div>
         </div>
     </div>
-    <div class="row bg-primary-gradient">
-        <div class="col-12 col-md-6">
+    <div class="row bg-primary-gradient p-6">
+        <div class="col-12 col-md-6 text-white">
+            <p class="fs-4 my-5">Desconéctate con nosotros</p>
+            <p clas>Desde los primerizos hasta los que quieren hacerlo una práctica regular, tenemos excelentes opciones para todos. 
+                Tenemos flotaciones de 60min, 90 min o 120min
+            </p>
         </div>
         <div class="col-12 col-md-6">
         </div>
     </div>
-    <div class="row"></div>
-    <div class="row"></div>
-</div>
+    <div class="bg-faq d-flex flex-column justify-content-center align-items-center p-5">
+        <div class="my-3 fs-4 fw-bolder">
+            <p>PREGUNTAS FRECUENTES</p>
+        </div>
+        <div *ngFor="let question of faqs; let i = index" class="bg-white rounded-4 my-1 shadow">
+            <div class="faqs d-flex justify-content-between pt-3 px-3">
+                <p class="pt-2">
+                    {{question.question}}
+                </p>
+                <p>
+                    <a class="btn btn-primary mt-1" type="button" data-bs-toggle="collapse" href="#faqCollapse-{{i}}" aria-expanded="false" aria-controls="multiCollapseExample2">+</a>
+                </p>
+            </div>
 
+                  <div class="collapse faqs" id="faqCollapse-{{i}}">
+                    <div class="px-3 pb-3 pt-0 text-light-emphasis">
+                      {{question.answer}}
+                      <ul *ngIf="question.items != []">
+                        <li *ngFor="let item of question.items">
+                            {{item}}
+                        </li>
+                      </ul>
+                    </div>
+
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="contact-form" class="col-12 col-md-6">
+        </div>
+        <div id="map-location" class="col-12 col-md-6">
+        </div>
+    </div>
+</div>
