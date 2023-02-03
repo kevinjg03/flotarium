@@ -60,12 +60,25 @@
     </div>
     <div class="row bg-primary-gradient p-6">
         <div class="col-12 col-md-6 text-white">
-            <p class="fs-4 my-5">Desconéctate con nosotros</p>
+            <p class="fs-4 my-5">{{"Desconéctate con nosotros" | uppercase}}</p>
             <p clas>Desde los primerizos hasta los que quieren hacerlo una práctica regular, tenemos excelentes opciones para todos. 
                 Tenemos flotaciones de 60min, 90 min o 120min
             </p>
         </div>
         <div class="col-12 col-md-6">
+            <div class="row d-flex justify-content-center">
+                <div *ngFor="let pack of servicePacks; let i = index" class="m-2 p-3 text-center col-12 col-md-5 bg-white rounded-5 shadow">
+                    <div class="d-flex flex-column align-content-between">
+                        <p class="fs-5">
+                            {{pack.name}}
+                        </p>
+                        <div class="d-flex flex-row justify-content-between ">
+                            <p class="fs-1 fw-bold">${{pack.price}} </p>
+                            <button class="btn btn-primary rounded-5 text-white my-3 w-50">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="bg-faq d-flex flex-column justify-content-center align-items-center p-5">
