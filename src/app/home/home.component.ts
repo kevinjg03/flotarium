@@ -44,4 +44,13 @@ export class HomeComponent {
       question: "¿Me puedo ahogar en el tanque?", 
       answer: "No, es prácticamente imposible ahogarse en una cámara de flotación. Al ser el agua tan densa, el cuerpo flota con completa facilidad. Incluso si nos quedamos dormidos, la profundidad del agua es tan baja, que no existe ningún peligro.", items: []},
   ]
+
+  servicePacks = [
+    {name: "Sesión individual - 60 minutos", price: "85", action: ""},
+    {name: "Sesión individual - 120 minutos", price: "132", action: ""},
+    {name: "Sesión individual - 90 minutos", price: "110", action: ""},
+    {name: "Pack de 3 sesiones", price: "230", action: ""}
+  ]
 }
+
+
