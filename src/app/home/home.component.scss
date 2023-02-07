@@ -15,7 +15,10 @@
 }
 
 .bg-float2 {
-    background-image: radial-gradient(circle, rgba(0,0,0,0.6) 19%, rgba(0,0,0,0.9) 100%), url(../../assets/img/bg-home-2.jpg)
+    background-image: radial-gradient(circle, rgba(0,0,0,0.6) 19%, rgba(0,0,0,0.9) 100%), url(../../assets/img/bg-home-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #benefit-list{

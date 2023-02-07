@@ -51,6 +51,10 @@ export class HomeComponent {
     {name: "Sesión individual - 90 minutos", price: "110", action: ""},
     {name: "Pack de 3 sesiones", price: "230", action: ""}
   ]
+
+
 }
+
+
 
 
