@@ -3,7 +3,7 @@
     <a class="navbar-brand w-10" href="#">
       <img class="w-100" src="assets/img/logo/logo-white.png" />
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    <button class="navbar-toggler text-white bg-white mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,12 +27,10 @@
       </ul>
       <div class="d-flex justify-content-between">
         <i class="fa-brands fa-light fa-facebook text-white mx-2"></i>
-        <div class="bg-white d-inline">
-          <i class="fa-solid fa-phone mx-2"></i>
-          <i class="fa-brands fa-whatsapp mx-2"></i>
-          <i class="fa-brands fa-instagram mx-2"></i>
-          <i class="fa-solid fa-location-dot mx-2"></i>
-        </div>
+        <i class="fa-solid fa-phone mx-2"></i>
+        <i class="fa-brands fa-whatsapp mx-2"></i>
+        <i class="fa-brands fa-instagram mx-2"></i>
+        <i class="fa-solid fa-location-dot mx-2"></i>
       </div>
     </div>
   </div>
@@ -41,19 +39,37 @@
 <router-outlet></router-outlet>
 
 <footer>
-  <div class="bg-dark-2 container-fluid p-5">
-    <div class="row p-5">
-      <div class="col-12 col-md-4 white ms-5">
+  <div class="bg-dark-2 container-fluid p-md-5">
+    <div class="row d-flex flex-row justify-content-between p-5">
+      <div class="col-12 col-md-4 white mx-0 mx-md-5 my-auto">
         <p class="text-white fs-1 w-75">¿TIENE PREGUNTAS?</p>
         <p class="text-white fs-6 w-75">Contactenos y estaremos felices de ayudarle</p>
-        <div class="d-inline fs-5">
-          <i class="fa-brands fa-light fa-facebook text-white mx-2"></i>
-          <div class="bg-white d-inline ">
-            <i class="fa-solid fa-phone mx-2"></i>
-            <i class="fa-brands fa-whatsapp mx-2"></i>
-            <i class="fa-brands fa-instagram mx-2"></i>
-            <i class="fa-solid fa-location-dot mx-2"></i>
-          </div>
+        <div class="social-media d-inline text-white fs-5">
+          <!--           <a href=""><i class="fa-brands fa-light fa-facebook text-white mx-2"></i></a>
+ --> <a href="tel:+50687805979"><i class="fa-solid fa-phone mx-2"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp mx-2"></i></a>
+          <a href=""><i class="fa-brands fa-instagram mx-2"></i></a>
+          <a href=""><i class="fa-solid fa-location-dot mx-2"></i></a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 white ms-md-5 ps-md-5 text-white  fw-lighter d-flex flex-column justify-content-end">
+        <div class="my-2">
+          <p class="my-0">Número de Teléfono</p>
+          <p>8780-5979
+          </p>
+        </div>
+
+        <div class="my-2">
+          <p class="my-0">Dirección</p>
+          <p>Sabana, 100m Sur de teletica, Condominio Vistas del Parque, local 1 y 2.
+          </p>
+        </div>
+        <div class="my-2">
+          <p class="my-0">Horario</p>
+          <p class="my-0">Lunes, Miércoles, Jueves y Viernes de 10:30 a 9:30pm</p>
+          <p class="my-0"> Sabados y Domingos de 9am a 8pm. </p>
+          <p>Martes cerrado
+          </p>
         </div>
       </div>
     </div>
