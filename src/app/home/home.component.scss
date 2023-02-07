@@ -33,9 +33,22 @@
 .bg-faq {
     background-image: url("../../assets/img/Recurso-3.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .faqs {
-    width: 450px;
+    width: 330px;
+}
+
+@media (min-width: 768px) {
+    .faqs {
+        width: 450px;
+    }
+
+    .bg-faq {
+        background-image: url("../../assets/img/Recurso-3.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
 }
