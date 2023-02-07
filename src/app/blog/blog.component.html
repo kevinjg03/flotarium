@@ -1,0 +1,60 @@
+<div class="container-fluid px-0">
+    <div class="row">
+        <div class="container thumbnail">
+            <img class="w-100" src="assets/img/float_nation.png" alt="Snow">
+            <h1 class="carousel-caption text-white">LUCEM ASPICIO <br> LUCEM ASPICIO</h1>
+        </div>
+    </div>
+    <div class="row w-50 m-auto d-flex justify-content-between">
+        <div class="col-12 col-md-5 m-2 m-md-4"
+            *ngFor="let card of cards | angularPaginator: { itemsPerPage: this.itemsPerPage, currentPage: currentPage }; let i = index">
+            <div class="card rounded-0">
+                <img src="assets/img/example-1.png" class="card-img-top rounded-0" alt="...">
+                <div class="card-body text-start">
+                    <h2 class="card-title fw-bold fs-3">Card title <span class="page-number">{{ (currentPage - 1) * itemsPerPage + i + 1 }}</span></h2>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-orange float-end fs-6 fw-lighter">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <nav
+        angularPaginator
+        [forceEllipses]="true"
+        [rotate]="true"
+        [maxSize]="10"
+        aria-label="Pagination Component"
+        #paginator="angularPaginator"
+        (pageChange)="currentPage = $event"
+      >
+        <ng-container *ngIf="paginator.pages['length'] !== 0">
+          <ul class="pagination pagination-sm justify-content-center">
+            <!-- pagination array -->
+            <li
+              class="page-item mx-1 rounded-0"
+              *ngFor="let page of paginator.pages"
+              [ngClass]="{ active: page['active'] }"
+            >
+              <a
+                class="page-link rounded-0 text-dark border-dark-subtle"
+                (click)="
+                  !page['active'] && paginator.setCurrentPage(page['number'])
+                "
+              >
+                {{ page['text'] }}
+                <span class="visually-hidden" *ngIf="!page['active']"
+                  >Page{{ page['text'] }}</span
+                >
+                <span class="visually-hidden" *ngIf="page['active']"
+                  >You are on page {{ page['text'] }}</span
+                >
+              </a>
+            </li>
+
+            
+          </ul>
+        </ng-container>
+      </nav>
+    </div>
+
+</div>

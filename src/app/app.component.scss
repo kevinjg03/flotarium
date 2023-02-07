@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.bg-dark-1 {
+    opacity: 1;
+    background: $color-primary
+}
+
+.bg-dark-2 {
+    opacity: 0.98;
+    background: #1E1B1B
+}
+
+footer {
+    height: 50vh;
+}
+
+.text-copyright {
+    color: #939191;
+}
+
+#footer-nav div ul li {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}
+
+nav div ul li a {
+    color: white !important
+}
+
+.social-media>a, .social-media>a:hover, .social-media>a:focus{
+ color: white !important;
+}

@@ -1,0 +1,57 @@
+.bg-primary-gradient {
+    background: rgb(4,38,99);
+    background: radial-gradient(circle, rgba(4,38,99,1) 50%, rgba(2,0,36,1) 100%, rgba(4,38,99,1) 100%);
+}
+
+.clock-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.water-bg {
+    background-image: radial-gradient(circle, rgba(4,38,99,0.8) 50%, rgba(2,0,36,0.8) 100%, rgba(4,38,99,0.8) 100%), url("../../assets/img/Recurso-2.png") ,;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-float2 {
+    background-image: radial-gradient(circle, rgba(0,0,0,0.6) 19%, rgba(0,0,0,0.9) 100%), url(../../assets/img/bg-home-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#benefit-list{
+    padding-left: 1rem !important;
+}
+
+.underline-title {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+
+}
+
+.bg-faq {
+    background-image: url("../../assets/img/Recurso-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.faqs {
+    width: 330px;
+}
+
+@media (min-width: 768px) {
+    .faqs {
+        width: 450px;
+    }
+
+    .bg-faq {
+        background-image: url("../../assets/img/Recurso-3.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
