@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogInternalComponent } from './blog-internal/blog-internal.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { AngularPaginatorModule } from 'angular-paginator';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
