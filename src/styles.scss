@@ -6,34 +6,38 @@ $prefix: "mo-";
 
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-.w-10 {
-    width: 10%;
-}
 .place-center {
-    place-content: center;
+  place-content: center;
 }
 body {
-    font-family: 'Manrope', sans-serif;
-    font-style: normal;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
 }
 .btn-primary {
-    --mo-btn-color: #fff;
-    --mo-btn-bg: #00bbd6;
-    --mo-btn-border-color: #00bbd6;
-    --mo-btn-hover-color: #fff;
-    --mo-btn-hover-bg: #05a9c1;
-    --mo-btn-hover-border-color: #00bbd6;
-    --mo-btn-focus-shadow-rgb: 49, 132, 253;
-    --mo-btn-active-color: #fff;
-    --mo-btn-active-bg: #00bbd6;
-    --mo-btn-active-border-color: #00bbd6;
-    --mo-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --mo-btn-disabled-color: #fff;
-    --mo-btn-disabled-bg: #00bbd6;
-    --mo-btn-disabled-border-color: #00bbd6;
+  --mo-btn-color: #fff;
+  --mo-btn-bg: #00bbd6;
+  --mo-btn-border-color: #00bbd6;
+  --mo-btn-hover-color: #fff;
+  --mo-btn-hover-bg: #05a9c1;
+  --mo-btn-hover-border-color: #00bbd6;
+  --mo-btn-focus-shadow-rgb: 49, 132, 253;
+  --mo-btn-active-color: #fff;
+  --mo-btn-active-bg: #00bbd6;
+  --mo-btn-active-border-color: #00bbd6;
+  --mo-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --mo-btn-disabled-color: #fff;
+  --mo-btn-disabled-bg: #00bbd6;
+  --mo-btn-disabled-border-color: #00bbd6;
 }
 .p-6 {
-    padding: 5rem !important;
+  padding: 5rem !important;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .w-10 {
+    width: 10%;
+  }
 }
