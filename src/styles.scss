@@ -37,3 +37,25 @@ body {
 .p-6 {
     padding: 5rem !important;
 }
+
+@media (min-width: 768px) {
+    .p-md-6 {
+        padding: 5rem !important;
+    }
+
+    .w-md-25 {
+        width: 25%;
+    }
+
+    .w-md-50 {
+        width: 50%;
+    }
+
+    .w-md-75 {
+        width: 75%;
+    }
+
+    .w-md-100 {
+        width: 100%;
+    }
+}
