@@ -52,12 +52,22 @@ export class HomeComponent {
   ]
 
   servicePacks = [
-    {name: "Sesión individual - 60 minutos", price: "85", action: ""},
+    {name: "Sesión individual - 60 minutos", price: "85", action: "#120WidgetModalLabel"},
     {name: "Sesión individual - 120 minutos", price: "132", action: ""},
     {name: "Sesión individual - 90 minutos", price: "110", action: ""},
     {name: "Pack de 3 sesiones", price: "230", action: ""}
   ]
 
+  activeFaq = {
+    id : -1, 
+    opened: false
+  };
+
+
+  changeActiveFaq (pActiveFaq: any) {
+    this.activeFaq.id = pActiveFaq.id;
+    this.activeFaq.opened = pActiveFaq.opened;
+  }
 
 }
 
