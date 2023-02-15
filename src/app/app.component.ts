@@ -6,7 +6,7 @@ import * as $ from "jquery";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'flotarium';
   scrollTo (pIdSection: string) {
     let position = $('#' + pIdSection).offset()?.top;
@@ -21,4 +21,5 @@ export class AppComponent {
       $("html, body").animate({scrollTop: position }, 100);
     }
   }
+
 }

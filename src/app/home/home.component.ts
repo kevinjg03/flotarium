@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -62,7 +63,6 @@ export class HomeComponent {
     id : -1, 
     opened: false
   };
-
 
   changeActiveFaq (pActiveFaq: any) {
     this.activeFaq.id = pActiveFaq.id;

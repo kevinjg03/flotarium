@@ -35,6 +35,14 @@ nav div ul li a {
  color: white !important;
 }
 
+.fixed-nav {
+    position: fixed;
+    top: 0px;
+    background-color: rgb(4, 38, 99);
+    width: 100%;
+    z-index: 5;
+}
+
 .inst {
     color: white;
     margin: 6px 4px 0px 6px;
