@@ -119,27 +119,25 @@
         <div class="my-3 fs-4 fw-bolder">
             <p>PREGUNTAS FRECUENTES</p>
         </div>
-        <div *ngFor="let question of faqs; let i = index" class="bg-white rounded-4 my-1 shadow">
-            <div class="faqs d-flex justify-content-between pt-3 px-3">
-                <p class="pt-2">
-                    {{question.question}}
-                </p>
-                <p>
-                    <a class="btn btn-primary mt-1" type="button" data-bs-toggle="collapse" href="#faqCollapse-{{i}}" aria-expanded="false" aria-controls="multiCollapseExample2" (click)="changeActiveFaq({id: i, opened: !activeFaq.opened})">{{activeFaq.id == i && activeFaq.opened ? '-' : '+'}}</a>
-                </p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item bg-white rounded-4 my-1 shadow" *ngFor="let question of faqs; let i = index" >
+                <h2 class="accordion-header" id="headingOne-{{i}}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#faqCollapse-' + i " aria-expanded="true" [attr.aria-controls]="'faqCollapse-' + i">
+                        {{question.question}}
+                    </button>
+                  </h2>
+                 <div aria-labelledby="headingOne- + i " class="accordion-collapse collapse faqs" id="faqCollapse-{{i}}" data-bs-parent="#accordionExample">
+                        <div class="px-3 pb-3 pt-0 text-light-emphasis accordion-body">
+                          {{question.answer}}
+                          <ul *ngIf="question.items != []">
+                            <li *ngFor="let item of question.items">
+                                {{item}}
+                            </li>
+                          </ul>
+                        </div>
+    
+                </div>
             </div>
-
-                  <div class="accordion-collapse collapse faqs" id="faqCollapse-{{i}}">
-                    <div class="px-3 pb-3 pt-0 text-light-emphasis">
-                      {{question.answer}}
-                      <ul *ngIf="question.items != []">
-                        <li *ngFor="let item of question.items">
-                            {{item}}
-                        </li>
-                      </ul>
-                    </div>
-
-              </div>
         </div>
     </div>
     <div class="row align-content-center align-items-center panel" id="contact" data-section="withHeader">

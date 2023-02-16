@@ -64,3 +64,39 @@
         background-size: cover;
     }
 }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('../../assets/img/less.png') !important;
+        transform: rotate(-180deg);
+        height: 30px;
+    }
+    .accordion-button::after {
+        flex-shrink: 0;
+        width: 3.25rem;
+        height: 34px;
+        margin-left: auto;
+        content: "";
+        background-image: url('../../assets/img/add.png');
+        background-repeat: no-repeat;
+        background-size: 12px;
+        transition: transform .2s ease-in-out;
+        background-color: #02bbd6;
+        border-radius: 20px;
+        text-align: center;
+        background-position: center;
+    }
+
+.accordion-item:first-of-type .accordion-button {
+    background-color: white;
+    border: none !important;
+    border-radius: 18px;
+    color: #6c757d;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    border: none !important;
+    border-radius: 18px;
+    color: #6c757d;
+    box-shadow: none;
+}
