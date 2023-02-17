@@ -1,17 +1,39 @@
 <nav class="navbar navbar-expand-lg bg-dark-1 text-white panel fixed-nav" >
   <div class="container-fluid">
     <a class="navbar-brand w-10" href="#">
-      <img class="w-100" src="assets/img/logo/logo-white.png" />
+      <img class="w-100 header-logo" src="assets/img/logo/logo-white.png" />
     </a>
-    <button class="navbar-toggler text-white bg-white mx-auto" type="button" data-bs-toggle="collapse"
+    <button class="navbar-toggler text-white bg-white me-3" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto phoneMenuOptions">
+        <li class="nav-item" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+          <a class="nav-link active" aria-current="page"  (click)="scrollTo('home')">Home</a>
+        </li>
+        <li class="nav-item" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+          <a class="nav-link" (click)="scrollTo('benefics')">Beneficios</a>
+        </li>
+        <li class="nav-item" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+          <a class="nav-link" (click)="scrollTo('services')">Servicios</a>
+        </li>
+        <li class="nav-item" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+          <a class="nav-link" (click)="scrollTo('faq')">FAQ</a>
+        </li>
+        <li class="nav-item" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+          <a class="nav-link" (click)="scrollTo('contact')">Contáctenos</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto desktopMenuOptions">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" (click)="scrollTo('top')" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" (click)="scrollTo('home')">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" (click)="scrollTo('benefics')">Beneficios</a>
@@ -43,9 +65,17 @@
         </div>
         <div class="social-media d-flex justify-content-between d-md-none text-white fs-5 w-100">
           <a href="tel:+50687805979"><img class="mx-2 icon" src="assets/icon/llamar.png"></a>
-          <a href="#"><img class="mx-2 icon" src="assets/icon/whatsapp-white.png"></a>
-          <a href="#"><img class="mx-2 icon" src="assets/icon/instagram-2.png"></a>
-          <a href="#"><img class="mx-2 icon" src="assets/icon/pin-de-ubicacion.png"></a>
+          <a target="_blank" class="mx-2" href="https://api.whatsapp.com/send?phone=87805979"><img class="mx-2 icon" src="assets/icon/whatsapp-white.png"></a>
+          <a target="_blank" class="mx-2" href="https://www.instagram.com/flotariumcr">
+            <!-- <img class="mx-2 icon" src="assets/icon/instagram-2.png"> -->
+            <i class="fa fa-instagram inst" aria-hidden="true"></i>
+          </a>
+          <a target="_blank"  class="mx-2" href="https://www.facebook.com/profile.php?id=100088730892523">
+            <i class="fa fa-facebook inst" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" class="mx-2" href="https://www.google.es/maps/place/Flotarium/@9.9020529,-85.945113,8z/data=!4m10!1m2!2m1!1sFlotarium+Centro+de+Salud+y+Bienesta!3m6!1s0x8fa0fd7f47a2c009:0xce489bdaf84e777!8m2!3d9.9345193!4d-84.1103962!15sCiVGbG90YXJpdW0gQ2VudHJvIGRlIFNhbHVkIHkgQmllbmVzdGFykgEPd2VsbG5lc3NfY2VudGVy4AEA!16s%2Fg%2F11k3hxjrmc?hl=es">
+            <img class="mx-2 icon" src="assets/icon/pin-de-ubicacion.png">
+          </a>
         </div>
       </div>
     </div>

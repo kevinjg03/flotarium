@@ -15,8 +15,8 @@ export class AppComponent  {
     let navTop = $('.app-main-nav');
     // let fixPosition = 75;
     let fixPosition = 0;
-    let navFixedPostion = 0;
-    if (position) {
+    let navFixedPostion = 75;
+    if (position || position === 0) {
       position = position - fixPosition - navFixedPostion;
       $("html, body").animate({scrollTop: position }, 100);
     }

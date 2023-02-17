@@ -48,3 +48,19 @@ nav div ul li a {
     margin: 6px 4px 0px 6px;
     font-size: 22px;
 }
+
+@media (max-width: 1400px) {
+    .header-logo {
+        height: 40px;
+    }
+}
+@media (max-width: 991px) {
+    .desktopMenuOptions {
+        display: none !important;
+    }
+}
+@media (min-width: 992px) {
+    .phoneMenuOptions {
+        display: none !important;
+    }
+}
