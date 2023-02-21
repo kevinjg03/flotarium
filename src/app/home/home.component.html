@@ -66,8 +66,8 @@
                 Tenemos flotaciones de 60min, 90 min o 120min
             </p>
         </div>
-        <div class="col-12 col-md-6">
-            <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-6">
+            <div class="row d-flex justify-content-between justify-content-lg-center">
                 <div  class="m-2 p-3 text-center col-12 col-md-5 bg-white rounded-5 shadow">
                     <div class="d-flex flex-column align-content-between">
                         <p class="text mb-0">
@@ -122,7 +122,7 @@
         <div class="accordion" id="accordionExample">
             <div class="accordion-item bg-white rounded-4 my-1 shadow" *ngFor="let question of faqs; let i = index" >
                 <h2 class="accordion-header" id="headingOne-{{i}}">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#faqCollapse-' + i " aria-expanded="true" [attr.aria-controls]="'faqCollapse-' + i">
+                    <button class="accordion-button collapsed rounded-0 text-black" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#faqCollapse-' + i " aria-expanded="true" [attr.aria-controls]="'faqCollapse-' + i">
                         {{question.question}}
                     </button>
                   </h2>

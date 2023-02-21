@@ -25,7 +25,7 @@ export class HomeComponent {
   faqs = [
     {id: 1, 
       question: "¿En qué consisten las cámaras de flotación?", 
-      answer: "Los tanques, que se ven como tinas cerradas, están diseñadas para bloquear cualquier sonido o luz del exterior. Se llenan con 25cm de agua temperada a 34°C y 300 kg de sales Epsom (magnesio y oxigeno) eliminando la gravedad y ayudándolo a flotar sin ningún esfuerzo. \
+      answer: "Los tanques, que se ven como tinas cerradas, están diseñadas para bloquear cualquier sonido o luz del exterior. Se llenan con 25cm de agua temperada a 36°C y 300 kg de sales Epsom (magnesio y oxigeno) eliminando la gravedad y ayudándolo a flotar sin ningún esfuerzo. \
     Después de unos minutos de quietud, se deja de sentir el agua y con esto restringimos los sentidos de la vista, olfato y tacto.", items: []},
     {id: 2, 
       question: "¿Las mujeres embarazadas pueden flotar?", 
