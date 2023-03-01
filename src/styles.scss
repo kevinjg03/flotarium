@@ -39,6 +39,10 @@ body {
   height: 20px;
 }
 
+.w-xs-auto {
+  width: auto;
+}
+
 @media (min-width: 768px) {
     .p-md-6 {
         padding: 5rem !important;
@@ -63,7 +67,10 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .w-10 {
-    width: 10%;
+    width: 10% !important;
+  }
+  .header-logo {
+    width: 100% !important;
   }
 }
 
