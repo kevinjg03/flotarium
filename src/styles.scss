@@ -64,13 +64,13 @@ body {
         width: 100%;
     }
 }
+.header-logo {
+  max-width: 116px !important;
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .w-10 {
     width: 10% !important;
-  }
-  .header-logo {
-    width: 100% !important;
   }
 }
 
